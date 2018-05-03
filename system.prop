@@ -38,6 +38,7 @@ ro.hwui.text_small_cache_width=1024
 ro.hwui.text_small_cache_height=1024
 ro.hwui.text_large_cache_width=4096
 ro.hwui.text_large_cache_height=2048
+ro.hwui.fbo_cache_size=16
 
 #
 # Dalvik
@@ -48,7 +49,7 @@ dalvik.vm.heapgrowthlimit=256m
 dalvik.vm.heapstartsize=8m
 dalvik.vm.heapsize=512m
 dalvik.vm.heaptargetutilization=0.75
-dalvik.vm.heapminfree=512k
+dalvik.vm.heapminfree=2m
 dalvik.vm.heapmaxfree=8m
 
 #
@@ -106,7 +107,8 @@ ro.opengles.version=196610
 debug.hwui.use_buffer_age=false 
 ro.sf.lcd_density=640 
 ro.bq.gpu_to_cpu_unsupported=1
-sys.use_fifo_ui=1 
+sys.use_fifo_ui=1
+video.accelerate.hw=1
 
 #
 # Audio
@@ -120,6 +122,16 @@ audio_hal.force_voice_config=wide
 #
 
 wifi.interface=wlan0
+
+#
+# Battery and performance
+#
+
+debug.performance.tuning=1
+persist.sys.scrollingcache=3
+ro.ril.power_collapse=1
+power.saving.mode=1
+power_supply.wakeup=enable
 
 #
 # END zero device-properties
